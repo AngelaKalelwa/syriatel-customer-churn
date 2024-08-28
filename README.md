@@ -114,7 +114,7 @@ imblearn
 ### Clone the repository
 
 ```bash
-git clone <repo_link>
-cd <repo_directory>
+git clone <https://github.com/AngelaKalelwa/syriatel-customer-churn.git>
+cd <syriatel-customer-churn>
 
 This README provides a structured and comprehensive overview of your project, including installation instructions and the data science process involved. Let me know if you need further adjustments!
