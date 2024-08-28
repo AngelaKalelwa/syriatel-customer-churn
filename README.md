@@ -60,9 +60,11 @@ Key steps in the data preparation phase included:
 
 - **Addressing Missing Values**: Since there were no missing values in the dataset, no imputation was necessary.
 - **Encoding Categorical Variables**: We used one-hot encoding to convert categorical variables (`international plan`, `voice mail plan`) into numerical format.
+- - **Multicollinearity Reduction**: Features that exhibited high multicollinearity were removed using VIF analysis, reducing the dataset from 17 columns to 12.
 - **Feature Scaling**: Numerical features were scaled using `MinMaxScaler` to standardize the range.
-- **Multicollinearity Reduction**: Features that exhibited high multicollinearity were removed using VIF analysis, reducing the dataset from 17 columns to 8.
+
 - **Handling Imbalanced Data**: SMOTE was applied to balance the classes in the target variable.
+- **Feature Selection**: Selecting a subset of relevant features (variables, predictors) for use in model construction.
 
 ### 4. Modeling
 
@@ -87,8 +89,8 @@ Both models were evaluated using the following metrics:
 - **ROC-AUC**: The area under the Receiver Operating Characteristic curve, measuring the model's ability to discriminate between classes.
 
 Key results:
-- **Logistic Regression**: Test accuracy of 86.2%, ROC-AUC of 0.68.
-- **Decision Tree**: Test accuracy of 87.1%, ROC-AUC of 0.75.
+- **Logistic Regression**: Test accuracy of 87%, ROC-AUC of 0.816.
+- **Decision Tree**: Test accuracy of 94%, ROC-AUC of 0.822
 
 ### 6. Conclusion and Recommendations
 
