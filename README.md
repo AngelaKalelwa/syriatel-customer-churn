@@ -78,7 +78,7 @@ Key steps in the data preparation phase included:
 
 - **Addressing Missing Values**: Since there were no missing values in the dataset, no imputation was necessary.
 - **Encoding Categorical Variables**: We used one-hot encoding to convert categorical variables (`international plan`, `voice mail plan`) into numerical format.
-- **Multicollinearity Reduction**: Features that exhibited high multicollinearity were removed using VIF analysis, reducing the dataset from 17 columns to 12.
+- **Multicollinearity Reduction**: Features that exhibited high multicollinearity were removed using VIF analysis, reducing the dataset from 21 columns to 14(including target variable).
 - **Feature Scaling**: Numerical features were scaled using `MinMaxScaler` to standardize the range.
 
 - **Handling Imbalanced Data**: SMOTE was applied to balance the classes in the target variable.
@@ -108,9 +108,8 @@ Both models were evaluated using the following metrics:
 
 Key results:
 - **Train-Test Split**: 70.0%- 30.0%
-- **Logistic Regression**: Test accuracy of 87%, ROC-AUC of 0.8123
-- **Decision Tree**: Test accuracy of 94%, ROC-AUC of 
-0.8417
+- **Logistic Regression**: Test accuracy of 87%, ROC-AUC of 0.8123.
+- **Decision Tree**: Test accuracy of 94%, ROC-AUC of 0.8417.
   
 - **Conclusion**: The decision tree model showed better overall performance, especially in improving recall for the churn class. However, both models could be further refined, especially to address the recall issue for churn predictions.
 
